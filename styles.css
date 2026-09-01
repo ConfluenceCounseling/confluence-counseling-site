@@ -3025,6 +3025,10 @@ textarea {
     width: min(100% - 28px, 1200px);
   }
 
+  .services-compact-hero {
+    grid-template-columns: 1fr;
+  }
+
   .hero::before,
   .intro-section::after,
   .practice-intro::after {
