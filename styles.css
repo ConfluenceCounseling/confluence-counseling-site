@@ -3221,7 +3221,7 @@ textarea {
 
 .contact-form-intro .contact-lines {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(18rem, 1.45fr) minmax(8rem, 0.8fr) minmax(8rem, 0.75fr);
   gap: 18px;
   margin-top: 24px;
 }
