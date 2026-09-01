@@ -37,7 +37,7 @@
     </section>
 
     <section class="contact-layout contact-layout-single">
-      <form class="contact-form" id="contact-form" novalidate>
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/mkjnjbek" method="POST">
         <div class="contact-form-intro">
           <p class="eyebrow">Practice details</p>
           <h2>Confluence Counseling</h2>
@@ -61,7 +61,7 @@
         <textarea id="message" name="message" rows="6" placeholder="Briefly share what brings you here." required></textarea>
 
         <button class="button primary" type="submit">Send message</button>
-        <p class="form-note" id="form-status" role="status">Online form submission requires a secure static-form endpoint before messages can be sent from this form. You may also contact us directly by email or phone above.</p>
+        <p class="form-note">Please do not include sensitive health information in this form.</p>
       </form>
     </section>
 
@@ -89,19 +89,5 @@
     </div>
     <p class="footer-copyright">© 2026 Confluence Counseling • Rome, Georgia</p>
   </footer>
-  <script>
-    const contactForm = document.querySelector("#contact-form");
-    const formStatus = document.querySelector("#form-status");
-
-    contactForm?.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      if (!contactForm.reportValidity()) {
-        return;
-      }
-
-      formStatus.textContent = "Online form submission is not configured yet. Please email info@confluencecounselingrome.com or call (706) 917-8454.";
-    });
-  </script>
 </body>
 </html>
