@@ -3181,3 +3181,253 @@ textarea {
     padding: 22px;
   }
 }
+
+.site-crisis-notice {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto clamp(36px, 5vw, 58px);
+  padding: 20px 24px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(229, 216, 195, 0.5);
+}
+
+.site-crisis-notice p {
+  max-width: 920px;
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.contact-layout-single {
+  display: block;
+  max-width: 760px;
+}
+
+.contact-layout-single .contact-form {
+  width: 100%;
+}
+
+.contact-form-intro {
+  margin-bottom: 18px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-form-intro h2 {
+  margin-top: 8px;
+  font-size: clamp(2rem, 3vw, 3.1rem);
+}
+
+.contact-form-intro .contact-lines {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .intro-section,
+  .place-feature-figure,
+  .split-section,
+  .clinician-profile,
+  .clinician-profile-reverse,
+  .clinician-service-layout,
+  .clinician-service-brian,
+  .services-compact-sections,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    gap: 38px;
+  }
+
+  .intro-section,
+  .split-section,
+  .place-feature,
+  .practice-intro,
+  .counselors-section,
+  .resource-section {
+    padding-top: clamp(54px, 9vw, 74px);
+    padding-bottom: clamp(54px, 9vw, 74px);
+  }
+
+  .intro-copy,
+  .quiet-list,
+  .place-feature-caption,
+  .clinician-content,
+  .services-diagnosis-section .diagnosis-intro {
+    max-width: 760px;
+  }
+
+  .place-feature-figure {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .clinician-profile-reverse .clinician-content,
+  .clinician-profile-reverse .clinician-portrait {
+    order: initial;
+  }
+
+  .compact-grid,
+  .spanish-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .site-header,
+  .hero,
+  .page-hero,
+  .intro-section,
+  .place-feature,
+  .split-section,
+  .cta-section,
+  .practice-intro,
+  .counselors-section,
+  .about-closing-section,
+  .services-compact-hero,
+  .services-compact-body,
+  .services-compact-cta,
+  .help-hero,
+  .resource-section,
+  .site-crisis-notice,
+  .contact-layout,
+  .site-footer {
+    width: min(100% - 28px, 1200px);
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+    gap: 4px 10px;
+  }
+
+  .site-nav a {
+    padding: 7px 0;
+    border-radius: 0;
+    font-size: 0.9rem;
+  }
+
+  .site-nav .nav-button {
+    padding: 7px 11px;
+  }
+
+  h1,
+  .hero h1,
+  .page-hero h1,
+  .practice-intro h1,
+  .help-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.65rem, 13vw, 3.65rem);
+    line-height: 1;
+  }
+
+  h2,
+  .intro-copy h2,
+  .split-section h2 {
+    max-width: 100%;
+    font-size: clamp(2.15rem, 10vw, 3rem);
+    line-height: 1.02;
+  }
+
+  .hero-copy,
+  .intro-copy p,
+  .quiet-list p,
+  .page-hero p,
+  .help-hero p:last-child,
+  .services-subtitle {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 34px 0 58px;
+  }
+
+  .hero-logo-image {
+    width: min(100%, 360px);
+  }
+
+  .hero-visual {
+    min-height: auto;
+  }
+
+  .intro-section,
+  .split-section,
+  .place-feature,
+  .practice-intro,
+  .counselors-section,
+  .resource-section {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .place-feature-figure,
+  .resource-grid,
+  .compact-grid,
+  .spanish-grid,
+  .contact-form-intro .contact-lines {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-grid,
+  .compact-grid,
+  .spanish-grid {
+    border-left: 0;
+  }
+
+  .resource-heading h2 {
+    max-width: 100%;
+  }
+
+  .clinician-content h3 {
+    font-size: clamp(2.4rem, 11vw, 3rem);
+  }
+
+  .clinician-profile,
+  .clinician-profile-reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .services-diagnosis-section {
+    grid-template-columns: 1fr;
+  }
+
+  .diagnosis-list,
+  .services-diagnosis-section .diagnosis-list {
+    grid-template-columns: 1fr;
+  }
+
+  .services-compact-sections {
+    width: 100%;
+  }
+
+  .contact-form,
+  .resource-card,
+  .clinician-service {
+    padding: 22px;
+  }
+
+  .site-crisis-notice {
+    padding: 18px;
+  }
+}

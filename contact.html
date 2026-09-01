@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Confluence Counseling</title>
-  <meta name="description" content="Contact Confluence Counseling, a private-pay psychotherapy practice in Rome, Georgia.">
+  <meta name="description" content="Contact Confluence Counseling, a humanistic counseling and psychotherapy practice in Rome, Georgia.">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,38 +36,37 @@
       <p>Use the information below to contact Confluence Counseling, ask questions about scheduling, or begin a consultation request.</p>
     </section>
 
-    <section class="contact-layout">
-      <div class="contact-panel">
-        <p class="eyebrow">Practice details</p>
-        <h2>Confluence Counseling</h2>
-        <p>Rome, Georgia</p>
-        <div class="contact-lines">
-          <p><strong>Email</strong><br><a href="mailto:info@confluencecounselingrome.com">info@confluencecounselingrome.com</a></p>
-          <p><strong>Phone</strong><br><a href="tel:+17069178454">(706) 917-8454</a></p>
-          <p><strong>Hours</strong><br>By appointment only</p>
+    <section class="contact-layout contact-layout-single">
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="contact-form-intro">
+          <p class="eyebrow">Practice details</p>
+          <h2>Confluence Counseling</h2>
+          <div class="contact-lines">
+            <p><strong>Email</strong><br><a href="mailto:info@confluencecounselingrome.com">info@confluencecounselingrome.com</a></p>
+            <p><strong>Phone</strong><br><a href="tel:+17069178454">(706) 917-8454</a></p>
+            <p><strong>Hours</strong><br>By appointment only</p>
+          </div>
         </div>
-      </div>
 
-      <form class="contact-form" action="#" method="post">
         <label for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Your name">
+        <input id="name" name="name" type="text" placeholder="Your name" required>
 
         <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com">
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
 
         <label for="phone">Phone</label>
         <input id="phone" name="phone" type="tel" placeholder="(706) 917-8454">
 
         <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" placeholder="Briefly share what brings you here."></textarea>
+        <textarea id="message" name="message" rows="6" placeholder="Briefly share what brings you here." required></textarea>
 
         <button class="button primary" type="submit">Send message</button>
-        <p class="form-note">This sample form is visual only. A web host or form service will be needed to make messages send.</p>
+        <p class="form-note" id="form-status" role="status">Online form submission requires a secure static-form endpoint before messages can be sent from this form. You may also contact us directly by email or phone above.</p>
       </form>
     </section>
 
-    <section class="notice-section">
-      <p><strong>If this is an emergency:</strong> This website is not monitored for crisis support. Call 911 or go to the nearest emergency room if you are in immediate danger.</p>
+    <section class="site-crisis-notice">
+      <p>Confluence Counseling does not provide 24/7 crisis services. If you are experiencing an emergency or believe you may harm yourself or someone else, call 911 or 988 or go to the nearest emergency room.</p>
     </section>
   </main>
 
@@ -90,5 +89,19 @@
     </div>
     <p class="footer-copyright">© 2026 Confluence Counseling • Rome, Georgia</p>
   </footer>
+  <script>
+    const contactForm = document.querySelector("#contact-form");
+    const formStatus = document.querySelector("#form-status");
+
+    contactForm?.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!contactForm.reportValidity()) {
+        return;
+      }
+
+      formStatus.textContent = "Online form submission is not configured yet. Please email info@confluencecounselingrome.com or call (706) 917-8454.";
+    });
+  </script>
 </body>
 </html>
