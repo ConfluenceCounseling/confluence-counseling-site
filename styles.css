@@ -1674,25 +1674,6 @@ textarea:focus {
     var(--paper);
 }
 
-.resource-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  margin-bottom: 22px;
-  background: var(--sage);
-  color: var(--moss);
-  font-weight: 800;
-  font-size: 0.82rem;
-  letter-spacing: 0.04em;
-}
-
-.emergency-card .resource-icon {
-  background: var(--clay);
-  color: var(--paper);
-}
-
 .resource-card h3 {
   font-size: clamp(1.55rem, 2vw, 2.05rem);
   line-height: 1.08;
@@ -2942,14 +2923,6 @@ textarea:focus-visible {
   background: rgba(169, 82, 34, 0.12);
 }
 
-.resource-icon {
-  border-radius: 2px;
-  width: 46px;
-  height: 42px;
-  background: transparent;
-  border: 1px solid var(--ink);
-}
-
 .resource-link {
   border-radius: 2px;
   background: transparent;
@@ -3523,6 +3496,17 @@ textarea {
   border-color: rgba(169, 82, 34, 0.55);
 }
 
+.resource-language-availability {
+  margin: 16px 0 0;
+  color: var(--moss);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.help-hero h1 {
+  max-width: none;
+}
+
 @media (max-width: 900px) {
   .resource-grid-dense,
   #spanish-language-access .resource-grid-dense {
@@ -3547,5 +3531,13 @@ textarea {
 
   .resource-links {
     padding-top: 18px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .help-hero h1 {
+    max-width: none;
+    font-size: clamp(2.65rem, 12vw, 3.25rem);
+    white-space: nowrap;
   }
 }
