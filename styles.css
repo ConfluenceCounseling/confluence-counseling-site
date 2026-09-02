@@ -2582,12 +2582,16 @@ textarea:focus-visible {
 }
 
 .clinician-profile,
-.clinician-profile:first-child,
 .clinician-profile-reverse {
   border: 0;
   border-top: 1px solid var(--ink);
   background: transparent;
   padding: clamp(32px, 5vw, 60px) 0 0;
+}
+
+.clinician-profile:first-child {
+  border-top: 0;
+  padding-top: 0;
 }
 
 .clinician-profile {
