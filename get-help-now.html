@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Client Resources | Confluence Counseling</title>
-  <meta name="description" content="Client resources, crisis information, safety planning, disaster preparedness, and education resources for visitors in Georgia and Northwest Georgia.">
+  <meta name="description" content="Crisis, substance-use, disaster mental health, and community resources for people in Georgia and Northwest Georgia, including Spanish-language materials.">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,18 +28,28 @@
       <a class="nav-button" href="contact.html">Contact</a>
     </nav>
   </header>
-
   <main>
     <section class="help-hero">
       <p class="eyebrow">Resources</p>
       <h1>Client Resources</h1>
-      <p>If you or someone else may be in immediate danger, call 911 or go to the nearest emergency room. The resources below are provided for crisis support, safety planning, disaster preparedness, and education.</p>
-    </section>
-
-    <section class="resource-section crisis-section">
-      <div class="resource-heading">
-        <h2>Crisis Resources</h2>
+      <p>If you or someone else may be in immediate danger, call 911 or go to the nearest emergency room. The resources below include crisis support, treatment and peer-support locators, disaster mental health information, and community services.</p>
+      <nav class="resource-index" aria-label="Resource sections">
+        <p class="resource-index-label">Explore resources</p>
+        <div class="resource-index-links">
+          <a href="#crisis-resources">Crisis</a>
+          <a href="#spanish-language-access">Spanish-language access</a>
+          <a href="#substance-use-addiction">Substance use &amp; addiction</a>
+          <a href="#disaster-mental-health">Disaster mental health</a>
+          <a href="#education-peer-support">Education &amp; peer support</a>
+          <a href="#family-community-support">Family &amp; community support</a>
+        </div>
+      </nav>
+      <div class="language-access-note">
+        <p><strong>Spanish-language access:</strong> Official Spanish pages and publications are labeled <span lang="es">Español</span> throughout this page. A Spanish link may lead to a specific translated resource rather than an organization’s full website.</p>
       </div>
+    </section>
+    <section class="resource-section crisis-section" id="crisis-resources">
+      <div class="resource-heading"><h2>Crisis Resources</h2></div>
       <div class="resource-grid">
         <article class="resource-card emergency-card">
           <div class="resource-icon" aria-hidden="true">911</div>
@@ -47,248 +57,397 @@
           <p>If there is immediate danger, call 911 or go to the nearest emergency room.</p>
           <p class="resource-phone"><a href="tel:911">911</a></p>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">988</div>
-          <h3>988 Suicide & Crisis Lifeline</h3>
+          <h3>988 Suicide &amp; Crisis Lifeline</h3>
           <p>24/7 support for people experiencing suicidal thoughts, emotional distress, or behavioral health crisis.</p>
           <p class="resource-phone"><a href="tel:988">Call/Text: 988</a></p>
-          <a class="resource-link" href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <div class="resource-links">
+            <a class="resource-link" href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://988lifeline.org/es/inicio/" target="_blank" rel="noopener noreferrer" lang="es">Español</a>
+          </div>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">GA</div>
-          <h3>Georgia Crisis & Access Line (GCAL)</h3>
+          <h3>Georgia Crisis &amp; Access Line (GCAL)</h3>
           <p>24/7 Georgia crisis and access line for routine or crisis behavioral health services.</p>
           <p class="resource-phone"><a href="tel:+18007154225">1-800-715-4225</a></p>
-          <a class="resource-link" href="https://www.georgiacollaborative.com/providers/georgia-crisis-and-access-line-gcal/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a class="resource-link" href="https://dbhdd.georgia.gov/be-dbhdd/crisis-system-georgia" target="_blank" rel="noopener noreferrer">Website</a>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">VA</div>
           <h3>Veterans Crisis Line</h3>
-          <p>24/7 confidential crisis support for veterans and their loved ones.</p>
+          <p>24/7 confidential crisis support for Veterans and their loved ones.</p>
           <p class="resource-phone"><a href="tel:988">Call 988, then Press 1</a><br><a href="sms:838255">Text 838255</a></p>
-          <a class="resource-link" href="https://www.veteranscrisisline.net/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.veteranscrisisline.net/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://www.veteranscrisisline.net/es/" target="_blank" rel="noopener noreferrer" lang="es">Español</a>
+          </div>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">TXT</div>
           <h3>Crisis Text Line</h3>
           <p>Text-based crisis support from trained crisis counselors.</p>
-          <p class="resource-phone"><a href="sms:741741&body=HOME">Text HOME to 741741</a></p>
-          <a class="resource-link" href="https://www.crisistextline.org/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <p class="resource-phone"><a href="sms:741741&amp;body=HOME">Text HOME to 741741</a></p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.crisistextline.org/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://www.crisistextline.org/es/" target="_blank" rel="noopener noreferrer" lang="es">Español</a>
+          </div>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">DV</div>
           <h3>Georgia Coalition Against Domestic Violence</h3>
           <p>Statewide domestic violence information and hotline resources.</p>
           <p class="resource-phone"><a href="tel:+18003342836">1-800-334-2836</a></p>
-          <a class="resource-link" href="https://gcadv.org/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <div class="resource-links">
+            <a class="resource-link" href="https://gcadv.org/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://gcadv.org/wp-content/uploads/Friends-of-Family-Spanish-revised-9.23.19.pdf" target="_blank" rel="noopener noreferrer" lang="es">Español: safety guide</a>
+          </div>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">HH</div>
           <h3>Hospitality House for Women</h3>
           <p>Domestic violence shelter and advocacy services serving Northwest Georgia.</p>
-          <a class="resource-link" href="https://www.hospitalityhouseforwomen.org/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a class="resource-link" href="https://www.hospitalityhouseforwomen.org/" target="_blank" rel="noopener noreferrer">Website</a>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">DS</div>
           <h3>The Davies Shelters</h3>
           <p>Homeless shelters for men, women, and women with children.</p>
-          <a class="resource-link" href="https://daviesshelter.com/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a class="resource-link" href="https://daviesshelter.com/" target="_blank" rel="noopener noreferrer">Website</a>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">SA</div>
           <h3>Sexual Assault Center of Northwest Georgia</h3>
           <p>Regional sexual assault support, advocacy, and community education resources.</p>
-          <a class="resource-link" href="https://www.sacnwga.org" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a class="resource-link" href="https://www.sacnwga.org" target="_blank" rel="noopener noreferrer">Website</a>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">TP</div>
           <h3>The Trevor Project</h3>
           <p>Crisis support and suicide prevention resources for LGBTQ+ young people.</p>
-          <a class="resource-link" href="https://www.thetrevorproject.org" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a class="resource-link" href="https://www.thetrevorproject.org" target="_blank" rel="noopener noreferrer">Website</a>
         </article>
       </div>
     </section>
 
-    <section class="resource-section">
+    <section class="resource-section" id="spanish-language-access">
       <div class="resource-heading">
-        <h2>Spanish-Language and <span>Bilingual Resources</span></h2>
+        <h2>Spanish-Language <span>Access</span></h2>
+        <p>These resources provide bilingual or Spanish-specific support. Additional official Spanish links appear within relevant cards throughout the page.</p>
       </div>
-      <div class="resource-grid spanish-grid">
+      <div class="resource-grid resource-grid-dense">
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">AC</div>
           <h3>Anahata Connection</h3>
           <p>Bilingual support and community connection resources. Please verify current services directly through the organization.</p>
           <p class="resource-phone"><a href="tel:+13862789280">386-278-9280</a></p>
-          <a class="resource-link" href="https://www.instagram.com/anahata.connection?utm_source=qr" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a class="resource-link" href="https://www.instagram.com/anahata.connection?utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">SF</div>
           <h3>Su Familia Helpline</h3>
-          <p>Spanish-language information and referral helpline through the Georgia Department of Human Services.</p>
+          <p>Bilingual health information and referrals from the National Alliance for Hispanic Health.</p>
           <p class="resource-phone"><a href="tel:+18667832645">1-866-783-2645</a></p>
-          <a class="resource-link" href="https://dhs.georgia.gov/su-familia" target="_blank" rel="noopener noreferrer">Visit website</a>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-icon" aria-hidden="true">HH</div>
-          <h3>Hospitality House for Women</h3>
-          <p>Domestic violence shelter and advocacy services. This resource may be relevant for Spanish-speaking community members seeking safety and support.</p>
-          <a class="resource-link" href="https://www.hospitalityhouseforwomen.org/" target="_blank" rel="noopener noreferrer">Visit website</a>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-icon" aria-hidden="true">IRC</div>
-          <h3>International Rescue Committee</h3>
-          <p>Information and resources related to refugees, immigrants, asylum seekers, and displaced communities.</p>
-          <a class="resource-link" href="https://www.rescue.org" target="_blank" rel="noopener noreferrer">Visit website</a>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-icon" aria-hidden="true">KIND</div>
-          <h3>Kids in Need of Defense (KIND)</h3>
-          <p>Information and advocacy resources focused on immigrant and refugee children.</p>
-          <a class="resource-link" href="https://supportkind.org" target="_blank" rel="noopener noreferrer">Visit website</a>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-icon" aria-hidden="true">NILC</div>
-          <h3>National Immigration Law Center (NILC)</h3>
-          <p>Policy, legal, and educational resources related to immigrant rights.</p>
-          <a class="resource-link" href="https://www.nilc.org" target="_blank" rel="noopener noreferrer">Visit website</a>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-icon" aria-hidden="true">ILRC</div>
-          <h3>Immigrant Legal Resource Center (ILRC)</h3>
-          <p>Legal education and advocacy resources related to immigrant communities.</p>
-          <a class="resource-link" href="https://www.ilrc.org" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a class="resource-link" href="https://dhs.georgia.gov/su-familia" target="_blank" rel="noopener noreferrer">Program information</a>
         </article>
       </div>
     </section>
 
-    <section class="resource-section">
+    <section class="resource-section" id="substance-use-addiction">
       <div class="resource-heading">
-        <h2>Preparing and Planning</h2>
+        <h2>Substance Use <span>&amp; Addiction</span></h2>
+        <p>Treatment locators, educational materials, peer-support meetings, overdose prevention, and regional care.</p>
       </div>
-      <div class="resource-grid compact-grid">
+      <div class="resource-grid resource-grid-dense">
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">FT</div>
+          <h3>FindTreatment.gov</h3>
+          <p>Search the federal directory for mental health and substance-use treatment programs by location and type of care.</p>
+          <p class="resource-phone"><a href="tel:+18006624357">1-800-662-HELP (4357)</a></p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://findtreatment.gov/" target="_blank" rel="noopener noreferrer">Treatment locator</a>
+            <a class="resource-link resource-link-language" href="https://findtreatment.gov/es" target="_blank" rel="noopener noreferrer" lang="es">Español</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">PE</div>
+          <h3>Partnership to End Addiction</h3>
+          <p>Information and support for families concerned about a loved one’s substance use, from prevention through recovery.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://drugfree.org/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://drugfree.org/recursos-en-espanol/" target="_blank" rel="noopener noreferrer" lang="es">Recursos en español</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">VA</div>
+          <h3>VA Substance Use Treatment</h3>
+          <p>U.S. Department of Veterans Affairs information about treatment for Veterans experiencing alcohol or drug problems.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://mentalhealth.va.gov/substance-use/treatment.asp" target="_blank" rel="noopener noreferrer">Treatment information</a>
+            <a class="resource-link resource-link-language" href="https://www.mentalhealth.va.gov/spread-the-word/docs/printable/Medio-folleto-de-trastorno-por-consumo-de-sustancias.pdf" target="_blank" rel="noopener noreferrer" lang="es">Español: overview</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">SA</div>
+          <h3>Navigating Mental Health and Substance Use Care</h3>
+          <p>A SAMHSA guide to recognizing care needs, finding providers, and understanding treatment and payment options.</p>
+          <a class="resource-link" href="https://library.samhsa.gov/product/navigating-mental-health-substance-use-care/pep25-08-008" target="_blank" rel="noopener noreferrer">Read the guide</a>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">SA</div>
+          <h3>What Is Substance Abuse Treatment? A Booklet for Families</h3>
+          <p>A SAMHSA booklet explaining treatment, recovery, and ways family members can support a loved one.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://library.samhsa.gov/product/what-substance-abuse-treatment-booklet-families/sma14-4126" target="_blank" rel="noopener noreferrer">Read the booklet</a>
+            <a class="resource-link resource-link-language" href="https://library.samhsa.gov/sites/default/files/sma08-4098.pdf" target="_blank" rel="noopener noreferrer" lang="es">Español: PDF</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">SA</div>
+          <h3>Finding Quality Treatment for Substance Use Disorders</h3>
+          <p>A SAMHSA guide to signs of quality care and questions to ask when choosing a treatment program.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://library.samhsa.gov/product/finding-quality-treatment-substance-use-disorders/pep18-treatment-loc" target="_blank" rel="noopener noreferrer">Read the guide</a>
+            <a class="resource-link resource-link-language" href="https://library.samhsa.gov/sites/default/files/pep18-treatment-locs.pdf" target="_blank" rel="noopener noreferrer" lang="es">Español: PDF</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">AA</div>
+          <h3>Alcoholics Anonymous — Rome Meetings</h3>
+          <p>Current Alcoholics Anonymous meeting listings for Rome from AA Georgia Area 16.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://find.aageorgia.org/meetings/city/rome" target="_blank" rel="noopener noreferrer">Rome meetings</a>
+            <a class="resource-link resource-link-language" href="https://www.aageorgia.org/espantildeol.html" target="_blank" rel="noopener noreferrer" lang="es">Información en español</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">NA</div>
+          <h3>Narcotics Anonymous — Rome Meeting Directory</h3>
+          <p>A third-party directory of Rome-area Narcotics Anonymous meetings. Confirm schedules with the meeting location.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.narcotics.com/na-meetings/georgia/rome-georgia/" target="_blank" rel="noopener noreferrer">Rome directory</a>
+            <a class="resource-link resource-link-language" href="https://na.org/e-lit/que-es-el-programa-de-narcoticos-anonimos/" target="_blank" rel="noopener noreferrer" lang="es">Español: about NA</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">GOP</div>
+          <h3>Georgia Overdose Prevention</h3>
+          <p>Statewide overdose-prevention education, naloxone access information, training, and community resources.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://georgiaoverdoseprevention.org/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://georgiaoverdoseprevention.org/wp-content/uploads/Spanish-GOP-2pg-Instructions-June2024.pdf" target="_blank" rel="noopener noreferrer" lang="es">Español: naloxone guide</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">HR</div>
+          <h3>Highland Rivers Behavioral Health</h3>
+          <p>Regional mental health, substance-use, crisis stabilization, and detoxification services, with locations across Northwest Georgia.</p>
+          <a class="resource-link" href="https://highlandrivers.org/" target="_blank" rel="noopener noreferrer">Locations and services</a>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">AF</div>
+          <h3>Atrium Health Floyd and Harbin Clinic Behavioral Health</h3>
+          <p>Behavioral health information for outpatient, hospital-based, and substance-use services in the Floyd and Harbin system.</p>
+          <a class="resource-link" href="https://www.atriumhealthfloydharbin.org/health-services/behavioral-health" target="_blank" rel="noopener noreferrer">Services</a>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">AH</div>
+          <h3>AdventHealth Behavioral Health</h3>
+          <p>System-wide information about behavioral health and addiction care. Service availability varies by location.</p>
+          <a class="resource-link" href="https://www.adventhealth.com/services/behavioral-health" target="_blank" rel="noopener noreferrer">Services</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="resource-section" id="disaster-mental-health">
+      <div class="resource-heading">
+        <h2>Disaster <span>Mental Health</span></h2>
+        <p>Preparedness, shelter information, coping and recovery guidance, and behavioral health resources for families, peers, and responders.</p>
+      </div>
+      <div class="resource-grid resource-grid-dense">
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">GA</div>
           <h3>Georgia Emergency Management</h3>
-          <p>State agency coordinating preparedness, response, and recovery efforts for disasters and emergencies.</p>
-          <a class="resource-link" href="https://gema.georgia.gov" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <p>State information about preparing for, responding to, and recovering from disasters and emergencies.</p>
+          <a class="resource-link" href="https://gema.georgia.gov/" target="_blank" rel="noopener noreferrer">Website</a>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">RG</div>
           <h3>Ready Georgia</h3>
-          <p>Disaster preparedness resources for individuals and families in Georgia.</p>
-          <a class="resource-link" href="https://gema.georgia.gov/plan-prepare/ready-georgia" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <p>Georgia preparedness guidance for making emergency plans, building supply kits, and staying informed.</p>
+          <a class="resource-link" href="https://gema.georgia.gov/plan-prepare/ready-georgia" target="_blank" rel="noopener noreferrer">Preparedness resources</a>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">RC</div>
           <h3>Red Cross Local Chapter</h3>
-          <p>Find local Red Cross support and contact information.</p>
+          <p>Find local American Red Cross support and contact information.</p>
           <p class="resource-phone"><a href="tel:+18007332767">1-800-733-2767</a><br><a href="tel:+14048763302">Georgia Regional Headquarters: 404-876-3302</a></p>
-          <a class="resource-link" href="https://www.redcross.org/find-your-local-chapter.html" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.redcross.org/find-your-local-chapter.html" target="_blank" rel="noopener noreferrer">Find a chapter</a>
+            <a class="resource-link resource-link-language" href="https://www.redcross.org/cruz-roja/obtener-ayuda.html" target="_blank" rel="noopener noreferrer" lang="es">Obtener ayuda</a>
+          </div>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">RC</div>
           <h3>Red Cross Shelter Locator</h3>
-          <p>Search for open shelters during disasters.</p>
+          <p>Search for open American Red Cross shelters during disasters.</p>
           <p class="resource-phone"><a href="tel:+18007332767">1-800-733-2767</a></p>
-          <a class="resource-link" href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html" target="_blank" rel="noopener noreferrer">Find a shelter</a>
+            <a class="resource-link resource-link-language" href="https://www.redcross.org/cruz-roja/obtener-ayuda/buscar-un-refugio-abierto.html" target="_blank" rel="noopener noreferrer" lang="es">Buscar un refugio</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">WHO</div>
+          <h3>World Health Organization — Mental Health in Emergencies</h3>
+          <p>A fact sheet on mental health needs, risks, and coordinated support during and after emergencies.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.who.int/news-room/fact-sheets/detail/mental-health-in-emergencies" target="_blank" rel="noopener noreferrer">Fact sheet</a>
+            <a class="resource-link resource-link-language" href="https://www.who.int/es/news-room/fact-sheets/detail/mental-health-in-emergencies" target="_blank" rel="noopener noreferrer" lang="es">Español</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">SA</div>
+          <h3>Disaster Behavioral Health Family/Peer Support Guide</h3>
+          <p>A SAMHSA guide for family and peer supporters helping people cope with disasters and traumatic events.</p>
+          <a class="resource-link" href="https://library.samhsa.gov/product/disaster-behavioral-health-family-peer-support-guide/pep26-01-008" target="_blank" rel="noopener noreferrer">Read the guide</a>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">SA</div>
+          <h3>Tips for Survivors of a Disaster or Other Traumatic Event</h3>
+          <p>SAMHSA guidance about common reactions and coping in personal, family, work, and financial life after a disaster.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://library.samhsa.gov/product/tips-survivors-disaster-or-traumatic-event-what-expect-your-personal-family-work/pep23-01-01-010" target="_blank" rel="noopener noreferrer">Read the guide</a>
+            <a class="resource-link resource-link-language" href="https://www.samhsa.gov/resource/dbhis/tips-survivors-disaster-or-traumatic-event-what-expect-your-personal-family-work" target="_blank" rel="noopener noreferrer" lang="es">Español</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">ASPR</div>
+          <h3>ASPR Disaster Behavioral Health</h3>
+          <p>Federal planning and response guidance for addressing behavioral health needs during public health emergencies and disasters.</p>
+          <a class="resource-link" href="https://www.aspr.gov/readiness-response/response-operations/disaster-behavioral-health" target="_blank" rel="noopener noreferrer">Guidance</a>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">MHA</div>
+          <h3>Mental Health America — Coping With Disaster</h3>
+          <p>Information about emotional responses to disaster and practical steps for coping and supporting children.</p>
+          <a class="resource-link" href="https://mhanational.org/resources/coping-with-disaster/" target="_blank" rel="noopener noreferrer">Read the resource</a>
         </article>
       </div>
     </section>
 
-    <section class="resource-section">
-      <div class="resource-heading">
-        <h2>Education and <span>Community Support</span></h2>
-      </div>
-      <div class="resource-grid compact-grid">
-        <article class="resource-card">
-          <div class="resource-icon" aria-hidden="true">SA</div>
-          <h3>SAMHSA Treatment Locator</h3>
-          <p>Search for mental health and substance use treatment providers.</p>
-          <p class="resource-phone"><a href="tel:+18006624357">1-800-662-HELP (4357)</a></p>
-          <a class="resource-link" href="https://findtreatment.gov/" target="_blank" rel="noopener noreferrer">Visit website</a>
-        </article>
-
+    <section class="resource-section" id="education-peer-support">
+      <div class="resource-heading"><h2>Education &amp; <span>Peer Support</span></h2></div>
+      <div class="resource-grid resource-grid-dense">
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">VA</div>
           <h3>Make the Connection</h3>
-          <p>Veteran stories and mental health resources.</p>
-          <a class="resource-link" href="https://www.maketheconnection.net/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <p>Veteran stories and information about mental health concerns, life events, and treatment.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.maketheconnection.net/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://delivery.maketheconnection.net/familiares-amigos/" target="_blank" rel="noopener noreferrer" lang="es">Español: familias y amigos</a>
+          </div>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">VA</div>
           <h3>VA PTSD Resources</h3>
-          <p>Information and resources related to PTSD and treatment through the VA.</p>
-          <a class="resource-link" href="https://www.va.gov/health-care/health-needs-conditions/mental-health/ptsd/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <p>U.S. Department of Veterans Affairs information about PTSD, treatment, and support.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.va.gov/health-care/health-needs-conditions/mental-health/ptsd/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://www.ptsd.va.gov/spanish/" target="_blank" rel="noopener noreferrer" lang="es">Español</a>
+          </div>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">CM</div>
           <h3>Child Mind Institute</h3>
-          <p>Mental health and parenting resources for children, teens, and families.</p>
-          <a class="resource-link" href="https://childmind.org/resources/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <p>Mental health and parenting information for children, teens, and families.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://childmind.org/resources/" target="_blank" rel="noopener noreferrer">Resources</a>
+            <a class="resource-link resource-link-language" href="https://childmind.org/es/centro-de-recursos-para-la-familia/" target="_blank" rel="noopener noreferrer" lang="es">Español</a>
+          </div>
         </article>
-
-        <article class="resource-card">
-          <div class="resource-icon" aria-hidden="true">FR</div>
-          <h3>Family Resource Center</h3>
-          <p>Local family support and prevention services in Rome, Georgia.</p>
-          <a class="resource-link" href="https://frcrome.org/" target="_blank" rel="noopener noreferrer">Visit website</a>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-icon" aria-hidden="true">UW</div>
-          <h3>United Way Local Resources</h3>
-          <p>Local community support and resource connection.</p>
-          <a class="resource-link" href="https://www.unitedway.org/local/united-states/georgia/united-way-of-floyd-polk-chattooga-county" target="_blank" rel="noopener noreferrer">Visit website</a>
-        </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">PF</div>
           <h3>PFLAG Rome Georgia</h3>
-          <p>Support, education, and advocacy for LGBTQ+ people, families, and allies.</p>
-          <a class="resource-link" href="https://www.pflagromega.org/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <p>Local support, education, and advocacy for LGBTQ+ people, families, and allies.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.pflagromega.org/" target="_blank" rel="noopener noreferrer">Local chapter</a>
+            <a class="resource-link resource-link-language" href="https://pflag.org/resource/nuestros-hijos/" target="_blank" rel="noopener noreferrer" lang="es">Español: family guide</a>
+          </div>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">NA</div>
           <h3>NAMI Rome Georgia</h3>
-          <p>Local NAMI Rome advocacy, mental health education, and community priorities.</p>
-          <a class="resource-link" href="https://namiromega.org/get-involved/advocate/nami-romes-priorities/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <p>Local mental health education, support, and advocacy from the Rome-area NAMI affiliate.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://namiromega.org/" target="_blank" rel="noopener noreferrer">Local affiliate</a>
+            <a class="resource-link resource-link-language" href="https://www.nami.org/nami-helpline/linea-de-ayuda-de-nami/" target="_blank" rel="noopener noreferrer" lang="es">Línea de Ayuda de NAMI</a>
+          </div>
         </article>
-
         <article class="resource-card">
           <div class="resource-icon" aria-hidden="true">GA</div>
           <h3>Georgia Mental Health Consumer Network</h3>
           <p>Peer-led mental health recovery, advocacy, education, and community support in Georgia.</p>
-          <a class="resource-link" href="https://www.gmhcn.org" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a class="resource-link" href="https://www.gmhcn.org" target="_blank" rel="noopener noreferrer">Website</a>
         </article>
       </div>
     </section>
 
+    <section class="resource-section" id="family-community-support">
+      <div class="resource-heading"><h2>Family &amp; <span>Community Support</span></h2></div>
+      <div class="resource-grid resource-grid-dense">
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">FR</div>
+          <h3>Family Resource Center</h3>
+          <p>Local family support and child abuse prevention services in Rome, Georgia.</p>
+          <a class="resource-link" href="https://frcrome.org/" target="_blank" rel="noopener noreferrer">Website</a>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">UW</div>
+          <h3>United Way Local Resources</h3>
+          <p>Local community support and resource connections for Floyd, Polk, and Chattooga counties.</p>
+          <a class="resource-link" href="https://www.unitedway.org/local/united-states/georgia/united-way-of-floyd-polk-chattooga-county" target="_blank" rel="noopener noreferrer">Local listing</a>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">IRC</div>
+          <h3>International Rescue Committee</h3>
+          <p>Information and services for refugees, immigrants, asylum seekers, and displaced communities.</p>
+          <a class="resource-link" href="https://www.rescue.org/" target="_blank" rel="noopener noreferrer">Website</a>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">KIND</div>
+          <h3>Kids in Need of Defense (KIND)</h3>
+          <p>Legal services and information focused on unaccompanied and separated immigrant children.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://supportkind.org/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://supportkind.org/es/" target="_blank" rel="noopener noreferrer" lang="es">Español</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">NILC</div>
+          <h3>National Immigration Law Center (NILC)</h3>
+          <p>Policy, legal, and educational resources about the rights of low-income immigrants.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.nilc.org/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://www.nilc.org/resources/conozca-sus-derechos-si-usted-es-arrestado-detenido-inmigracion/" target="_blank" rel="noopener noreferrer" lang="es">Español: conozca sus derechos</a>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon" aria-hidden="true">ILRC</div>
+          <h3>Immigrant Legal Resource Center (ILRC)</h3>
+          <p>Legal education and practical resources for immigrants, families, and community advocates.</p>
+          <div class="resource-links">
+            <a class="resource-link" href="https://www.ilrc.org/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="resource-link resource-link-language" href="https://www.ilrc.org/sites/default/files/2026-04/Step-by-Step-Family-Preparedness-Plan-SPA.pdf" target="_blank" rel="noopener noreferrer" lang="es">Español: family plan</a>
+          </div>
+        </article>
+      </div>
+    </section>
     <section class="site-crisis-notice">
       <p>Confluence Counseling does not provide 24/7 crisis services. If you are experiencing an emergency or believe you may harm yourself or someone else, call 911 or 988 or go to the nearest emergency room.</p>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="footer-main">
       <div class="footer-brand">

@@ -3435,3 +3435,117 @@ textarea {
     padding: 18px;
   }
 }
+
+/* Client resources: topic navigation and integrated language access */
+.resource-index {
+  margin-top: clamp(32px, 5vw, 52px);
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.resource-index-label {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.resource-index-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+}
+
+.resource-index-links a {
+  color: var(--moss);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(169, 82, 34, 0.48);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.resource-index-links a:hover {
+  color: var(--clay);
+}
+
+.language-access-note {
+  max-width: 860px;
+  margin-top: 24px;
+  padding: 18px 20px;
+  border-left: 3px solid var(--clay);
+  background: rgba(229, 216, 195, 0.42);
+}
+
+.language-access-note p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.resource-section[id] {
+  scroll-margin-top: 24px;
+}
+
+.resource-heading > p {
+  max-width: 740px;
+  margin-top: 16px;
+  color: var(--muted);
+}
+
+.resource-grid-dense {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#spanish-language-access .resource-grid-dense {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 820px;
+}
+
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+.resource-links .resource-link {
+  margin-top: 0;
+}
+
+.resource-link-language {
+  border-color: rgba(169, 82, 34, 0.55);
+}
+
+@media (max-width: 900px) {
+  .resource-grid-dense,
+  #spanish-language-access .resource-grid-dense {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .resource-index-links {
+    display: grid;
+    gap: 12px;
+  }
+
+  .language-access-note {
+    padding: 16px;
+  }
+
+  .resource-grid-dense,
+  #spanish-language-access .resource-grid-dense {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-links {
+    padding-top: 18px;
+  }
+}
