@@ -2676,8 +2676,12 @@ textarea:focus-visible {
 
 .services-compact-hero {
   width: min(1120px, calc(100% - 32px));
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.54fr);
+  grid-template-columns: minmax(0, 1fr);
   padding-top: clamp(58px, 7vw, 86px);
+}
+
+.services-compact-hero > div {
+  max-width: 900px;
 }
 
 .services-compact-hero h1 {
@@ -3611,33 +3615,6 @@ textarea {
   transform: translateX(4px);
 }
 
-.services-orientation {
-  align-self: end;
-  border-top: 1px solid var(--ink);
-}
-
-.services-orientation .eyebrow {
-  margin: 0;
-  padding: 0 0 12px;
-}
-
-.services-orientation a {
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-  padding: 11px 0;
-  border-top: 1px solid var(--line);
-  color: var(--ink);
-  font-size: 0.92rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.services-orientation a::after {
-  content: "\2193";
-  color: var(--clay);
-}
-
 .services-audience,
 .therapist-comparison {
   width: min(1120px, calc(100% - 32px));
@@ -3685,8 +3662,7 @@ textarea {
   color: var(--muted);
 }
 
-.editorial-link,
-.clinician-contact-link a {
+.editorial-link {
   color: var(--moss);
   font-weight: 800;
   text-underline-offset: 3px;
@@ -3695,6 +3671,12 @@ textarea {
 .therapist-comparison .clinician-service-layout {
   width: 100%;
   margin: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.therapist-comparison .clinician-service-brian {
+  display: block;
 }
 
 .clinician-service h3 {
@@ -3715,8 +3697,26 @@ textarea {
   text-transform: uppercase;
 }
 
-.clinician-contact-link {
-  margin-top: 24px;
+.clinician-insurance-panel {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.38fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 60px);
+  padding: clamp(26px, 4vw, 38px);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  background: var(--cream);
+}
+
+.comparison-contact-link {
+  margin: 24px 0 0;
+  text-align: right;
+}
+
+.comparison-contact-link a {
+  color: var(--moss);
+  font-weight: 800;
+  text-underline-offset: 3px;
 }
 
 .services-common {
@@ -3763,7 +3763,12 @@ textarea {
 #how-to-begin,
 #where-to-start,
 #contact-options,
+#brian-contact,
 #alex-contact {
+  scroll-margin-top: 24px;
+}
+
+#diagnosis-in-context {
   scroll-margin-top: 24px;
 }
 
@@ -3777,7 +3782,7 @@ textarea {
 
 .contact-layout-review {
   max-width: 1200px;
-  grid-template-columns: minmax(300px, 0.76fr) minmax(0, 1.24fr);
+  grid-template-columns: minmax(0, 1.12fr) minmax(420px, 0.88fr);
   align-items: start;
   gap: clamp(22px, 3vw, 36px);
   margin-bottom: clamp(52px, 7vw, 84px);
@@ -3789,10 +3794,23 @@ textarea {
   padding: clamp(26px, 4vw, 38px);
 }
 
-.contact-directory-section + .contact-directory-section {
-  margin-top: clamp(30px, 5vw, 46px);
-  padding-top: clamp(28px, 4vw, 40px);
+.clinician-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
   border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+
+.contact-directory-section {
+  min-width: 0;
+  padding: 28px 28px 30px 0;
+}
+
+.contact-directory-section + .contact-directory-section {
+  padding-right: 0;
+  padding-left: 28px;
+  border-left: 1px solid var(--ink);
 }
 
 .contact-directory h2 {
@@ -3816,6 +3834,20 @@ textarea {
   color: var(--moss);
   font-weight: 800;
   overflow-wrap: anywhere;
+}
+
+.general-inquiries {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(140px, 0.6fr);
+  gap: 24px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.general-inquiries p {
+  margin: 0;
 }
 
 .contact-form-intro > p:last-child {
@@ -3887,12 +3919,17 @@ select:focus-visible {
   line-height: 1.6;
 }
 
+@media (max-width: 1100px) {
+  .contact-layout-review {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .start-orientation,
   .services-audience,
   .therapist-comparison-heading,
-  .services-common,
-  .contact-layout-review {
+  .services-common {
     grid-template-columns: 1fr;
   }
 
@@ -3900,18 +3937,13 @@ select:focus-visible {
     gap: 30px;
   }
 
-  .contact-directory {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 32px;
+  .therapist-comparison .clinician-service-layout,
+  .clinician-insurance-panel {
+    grid-template-columns: 1fr;
   }
 
-  .contact-directory-section + .contact-directory-section {
-    margin-top: 0;
-    padding-top: 0;
-    padding-left: 32px;
-    border-top: 0;
-    border-left: 1px solid var(--ink);
+  .clinician-insurance-panel {
+    gap: 18px;
   }
 }
 
@@ -3928,7 +3960,8 @@ select:focus-visible {
 
   .start-pathways,
   .form-preferences,
-  .contact-directory {
+  .clinician-contact-grid,
+  .general-inquiries {
     grid-template-columns: 1fr;
   }
 
@@ -3936,10 +3969,6 @@ select:focus-visible {
   .start-pathway:nth-child(even) {
     padding: 18px 0;
     border-left: 0;
-  }
-
-  .services-orientation {
-    margin-top: 28px;
   }
 
   .services-audience {
@@ -3959,15 +3988,27 @@ select:focus-visible {
   }
 
   .contact-directory {
-    gap: 0;
     padding: 22px;
   }
 
   .contact-directory-section + .contact-directory-section {
-    margin-top: 30px;
     padding-top: 28px;
     padding-left: 0;
     border-top: 1px solid var(--ink);
     border-left: 0;
+  }
+
+  .contact-directory-section {
+    padding-right: 0;
+    padding-bottom: 28px;
+  }
+
+  .contact-directory-section + .contact-directory-section {
+    padding-bottom: 30px;
+  }
+
+  .general-inquiries {
+    gap: 12px;
+    padding-left: 0;
   }
 }
