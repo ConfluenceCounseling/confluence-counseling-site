@@ -37,29 +37,12 @@
     </section>
 
     <section class="contact-layout contact-layout-review" id="contact-options">
-      <aside class="contact-directory" aria-label="Contact information">
-        <p class="eyebrow">Clinician contact</p>
-        <div class="clinician-contact-grid">
-          <div class="contact-directory-section" id="brian-contact">
-            <h2>Brian Harris, LPC</h2>
-            <div class="contact-lines">
-              <p><strong>Email</strong><br><a href="mailto:brian@confluencecounselingrome.com">brian@confluencecounselingrome.com</a></p>
-              <p><strong>Phone</strong><br><a href="tel:+17069178454">(706) 917-8454</a></p>
-            </div>
-          </div>
-
-          <div class="contact-directory-section" id="alex-contact">
-            <h2>Alex Callahan, APC</h2>
-            <div class="contact-lines">
-              <p><strong>Email</strong><br><a href="mailto:Alex@confluencecounselingrome.com">Alex@confluencecounselingrome.com</a></p>
-              <p><strong>Phone</strong><br><a href="tel:+17069163776">(706) 916-3776</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="general-inquiries">
-          <p><strong>For general inquiries:</strong><br><a href="mailto:info@confluencecounselingrome.com">info@confluencecounselingrome.com</a></p>
-          <p><strong>Hours:</strong><br>By appointment only</p>
+      <aside class="contact-directory" aria-label="General contact information">
+        <p class="eyebrow">General inquiries</p>
+        <h2>Confluence Counseling</h2>
+        <div class="contact-lines">
+          <p><strong>Email</strong><br><a href="mailto:info@confluencecounselingrome.com">info@confluencecounselingrome.com</a></p>
+          <p><strong>Hours</strong><br>By appointment only</p>
         </div>
       </aside>
 
@@ -81,19 +64,30 @@
         <label for="email">Email</label>
         <input id="email" name="email" type="email" placeholder="you@example.com" required>
 
-        <label for="phone">Phone</label>
-        <input id="phone" name="phone" type="tel" placeholder="Your phone number">
+        <div class="form-direct-contact" aria-label="Direct clinician contact information">
+          <p>If you already know which counselor you would like to contact, you may reach them directly:</p>
+          <div class="form-direct-contact-grid">
+            <div id="brian-contact">
+              <strong>Brian Harris, LPC</strong>
+              <a href="mailto:brian@confluencecounselingrome.com">brian@confluencecounselingrome.com</a>
+              <a href="tel:+17069178454">(706) 917-8454</a>
+            </div>
+            <div id="alex-contact">
+              <strong>Alex Callahan, APC</strong>
+              <a href="mailto:Alex@confluencecounselingrome.com">Alex@confluencecounselingrome.com</a>
+              <a href="tel:+17069163776">(706) 916-3776</a>
+            </div>
+          </div>
+        </div>
+
+        <label for="interested-counselor">Counselor you&rsquo;re interested in</label>
+        <select id="interested-counselor" name="interested_counselor">
+          <option value="No preference" selected>No preference</option>
+          <option value="Brian Harris, LPC">Brian Harris, LPC</option>
+          <option value="Alex Callahan, APC">Alex Callahan, APC</option>
+        </select>
 
         <div class="form-preferences">
-          <div class="form-field">
-            <label for="interested-clinician">Interested clinician</label>
-            <select id="interested-clinician" name="interested_clinician">
-              <option value="No preference" selected>No preference</option>
-              <option value="Brian Harris, LPC">Brian Harris, LPC</option>
-              <option value="Alex Callahan, APC">Alex Callahan, APC</option>
-            </select>
-          </div>
-
           <div class="form-field">
             <label for="session-format">Session format preference</label>
             <select id="session-format" name="session_format_preference" aria-describedby="preference-note">
@@ -111,23 +105,14 @@
               <option value="Private pay">Private pay</option>
             </select>
           </div>
-
-          <div class="form-field">
-            <label for="response-method">Preferred method of response</label>
-            <select id="response-method" name="preferred_response_method">
-              <option value="Either is fine" selected>Either is fine</option>
-              <option value="Email">Email</option>
-              <option value="Phone">Phone</option>
-            </select>
-          </div>
         </div>
         <p class="form-preference-note" id="preference-note">Preferences are not guarantees of availability. Brian offers in-person and telehealth sessions and accepts insurance or private pay. Alex offers in-person, private-pay sessions and does not accept insurance.</p>
 
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="6" placeholder="Briefly share what brings you here." required></textarea>
 
-        <button class="button primary" type="submit">Send message</button>
         <p class="form-note">Please do not include sensitive health information in this form.</p>
+        <button class="button primary" type="submit">Send message</button>
       </form>
     </section>
 

@@ -3782,7 +3782,7 @@ textarea {
 
 .contact-layout-review {
   max-width: 1200px;
-  grid-template-columns: minmax(0, 1.12fr) minmax(420px, 0.88fr);
+  grid-template-columns: minmax(300px, 0.72fr) minmax(0, 1.28fr);
   align-items: start;
   gap: clamp(22px, 3vw, 36px);
   margin-bottom: clamp(52px, 7vw, 84px);
@@ -3792,25 +3792,6 @@ textarea {
   border: 1px solid var(--ink);
   background: var(--sand);
   padding: clamp(26px, 4vw, 38px);
-}
-
-.clinician-contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: 18px;
-  border-top: 1px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
-}
-
-.contact-directory-section {
-  min-width: 0;
-  padding: 28px 28px 30px 0;
-}
-
-.contact-directory-section + .contact-directory-section {
-  padding-right: 0;
-  padding-left: 28px;
-  border-left: 1px solid var(--ink);
 }
 
 .contact-directory h2 {
@@ -3836,18 +3817,45 @@ textarea {
   overflow-wrap: anywhere;
 }
 
-.general-inquiries {
-  display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(140px, 0.6fr);
-  gap: 24px;
-  padding-top: 24px;
+.form-direct-contact {
+  margin: 28px 0 24px;
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.form-direct-contact > p {
+  margin: 0 0 16px;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   line-height: 1.55;
 }
 
-.general-inquiries p {
-  margin: 0;
+.form-direct-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.form-direct-contact-grid > div {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.form-direct-contact-grid strong {
+  margin-bottom: 3px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.form-direct-contact-grid a {
+  color: var(--moss);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .contact-form-intro > p:last-child {
@@ -3960,8 +3968,7 @@ select:focus-visible {
 
   .start-pathways,
   .form-preferences,
-  .clinician-contact-grid,
-  .general-inquiries {
+  .form-direct-contact-grid {
     grid-template-columns: 1fr;
   }
 
@@ -3991,24 +3998,7 @@ select:focus-visible {
     padding: 22px;
   }
 
-  .contact-directory-section + .contact-directory-section {
-    padding-top: 28px;
-    padding-left: 0;
-    border-top: 1px solid var(--ink);
-    border-left: 0;
-  }
-
-  .contact-directory-section {
-    padding-right: 0;
-    padding-bottom: 28px;
-  }
-
-  .contact-directory-section + .contact-directory-section {
-    padding-bottom: 30px;
-  }
-
-  .general-inquiries {
-    gap: 12px;
-    padding-left: 0;
+  .form-direct-contact-grid {
+    gap: 16px;
   }
 }
