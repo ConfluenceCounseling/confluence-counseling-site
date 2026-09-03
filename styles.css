@@ -3545,3 +3545,429 @@ textarea {
     white-space: nowrap;
   }
 }
+
+/* Visitor orientation and intake review */
+.start-orientation {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: clamp(42px, 6vw, 68px) 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(190px, 0.34fr) minmax(0, 1fr);
+  gap: clamp(36px, 6vw, 82px);
+  align-items: start;
+}
+
+.start-orientation-heading h2 {
+  margin-top: 10px;
+  font-size: clamp(2.2rem, 3.8vw, 3.8rem);
+  line-height: 0.96;
+}
+
+.start-pathways {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+}
+
+.start-pathway {
+  min-width: 0;
+  padding: 20px 22px 20px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.start-pathway:nth-child(even) {
+  padding-right: 0;
+  padding-left: 22px;
+  border-left: 1px solid var(--line);
+}
+
+.start-pathway > span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.start-pathway strong {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1.08;
+}
+
+.start-pathway strong span {
+  color: var(--clay);
+  transition: transform 160ms ease;
+}
+
+.start-pathway:hover strong span {
+  transform: translateX(4px);
+}
+
+.services-orientation {
+  align-self: end;
+  border-top: 1px solid var(--ink);
+}
+
+.services-orientation .eyebrow {
+  margin: 0;
+  padding: 0 0 12px;
+}
+
+.services-orientation a {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.services-orientation a::after {
+  content: "\2193";
+  color: var(--clay);
+}
+
+.services-audience,
+.therapist-comparison {
+  width: min(1120px, calc(100% - 32px));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.services-audience {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.34fr) minmax(0, 1fr);
+  gap: clamp(34px, 6vw, 72px);
+  padding: clamp(30px, 4vw, 46px) 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.services-audience > p:last-child {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.72;
+}
+
+.therapist-comparison {
+  padding: clamp(54px, 7vw, 82px) 0 clamp(48px, 6vw, 72px);
+}
+
+.therapist-comparison-heading {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
+  gap: clamp(34px, 6vw, 72px);
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+.therapist-comparison-heading h2,
+.services-experience-heading h2 {
+  margin-top: 10px;
+  font-size: clamp(2.5rem, 4.6vw, 4.8rem);
+  line-height: 0.96;
+}
+
+.therapist-comparison-heading > div:last-child {
+  max-width: 720px;
+  color: var(--muted);
+}
+
+.editorial-link,
+.clinician-contact-link a {
+  color: var(--moss);
+  font-weight: 800;
+  text-underline-offset: 3px;
+}
+
+.therapist-comparison .clinician-service-layout {
+  width: 100%;
+  margin: 0;
+}
+
+.clinician-service h3 {
+  margin: 10px 0 22px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 3.1vw, 3.35rem);
+  line-height: 0.98;
+}
+
+.clinician-insurance h4 {
+  margin: 0 0 16px;
+  color: var(--clay);
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.clinician-contact-link {
+  margin-top: 24px;
+}
+
+.services-common {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.38fr) minmax(0, 1fr);
+  gap: clamp(34px, 5vw, 68px);
+  align-items: start;
+}
+
+.services-common .eyebrow {
+  color: var(--clay);
+}
+
+.services-common > p:last-child {
+  color: var(--ink);
+}
+
+.services-experience {
+  padding-top: clamp(52px, 7vw, 80px);
+}
+
+.services-experience-heading {
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+
+.services-experience-heading .eyebrow,
+.services-compact-cta .eyebrow {
+  color: var(--clay);
+}
+
+.services-compact-sections h3 {
+  margin-bottom: 14px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.65rem, 2.3vw, 2.25rem);
+  line-height: 1.08;
+}
+
+#what-we-offer,
+#who-we-work-with,
+#cost-and-insurance,
+#what-therapy-is-like,
+#common-reasons,
+#how-to-begin,
+#where-to-start,
+#contact-options,
+#alex-contact {
+  scroll-margin-top: 24px;
+}
+
+.services-compact-cta > div:first-child {
+  max-width: 620px;
+}
+
+.services-compact-cta .eyebrow {
+  margin-bottom: 10px;
+}
+
+.contact-layout-review {
+  max-width: 1200px;
+  grid-template-columns: minmax(300px, 0.76fr) minmax(0, 1.24fr);
+  align-items: start;
+  gap: clamp(22px, 3vw, 36px);
+  margin-bottom: clamp(52px, 7vw, 84px);
+}
+
+.contact-directory {
+  border: 1px solid var(--ink);
+  background: var(--sand);
+  padding: clamp(26px, 4vw, 38px);
+}
+
+.contact-directory-section + .contact-directory-section {
+  margin-top: clamp(30px, 5vw, 46px);
+  padding-top: clamp(28px, 4vw, 40px);
+  border-top: 1px solid var(--ink);
+}
+
+.contact-directory h2 {
+  margin-top: 9px;
+  font-size: clamp(2rem, 3.2vw, 3.25rem);
+  line-height: 0.98;
+}
+
+.contact-directory .contact-lines {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.contact-directory .contact-lines p {
+  min-width: 0;
+  margin: 0;
+}
+
+.contact-directory a {
+  color: var(--moss);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.contact-form-intro > p:last-child {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.contact-next-step {
+  margin-bottom: 16px;
+  padding: 18px 0 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-next-step h3 {
+  margin-bottom: 7px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-next-step p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.form-preferences {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px 18px;
+  margin: 4px 0 0;
+}
+
+.form-field {
+  min-width: 0;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 7px;
+}
+
+select {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid var(--line);
+  border-radius: 1px;
+  background: #fffdf8;
+  color: var(--ink);
+  font: inherit;
+  padding: 12px 40px 12px 14px;
+}
+
+select:focus {
+  outline: 3px solid rgba(89, 102, 83, 0.18);
+  border-color: var(--moss);
+}
+
+select:focus-visible {
+  outline: 3px solid rgba(89, 102, 83, 0.18);
+  border-color: var(--moss);
+}
+
+.form-preference-note {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .start-orientation,
+  .services-audience,
+  .therapist-comparison-heading,
+  .services-common,
+  .contact-layout-review {
+    grid-template-columns: 1fr;
+  }
+
+  .start-orientation {
+    gap: 30px;
+  }
+
+  .contact-directory {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+  }
+
+  .contact-directory-section + .contact-directory-section {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 32px;
+    border-top: 0;
+    border-left: 1px solid var(--ink);
+  }
+}
+
+@media (max-width: 640px) {
+  .start-orientation,
+  .services-audience,
+  .therapist-comparison {
+    width: min(100% - 28px, 1200px);
+  }
+
+  .start-orientation {
+    padding: 42px 0;
+  }
+
+  .start-pathways,
+  .form-preferences,
+  .contact-directory {
+    grid-template-columns: 1fr;
+  }
+
+  .start-pathway,
+  .start-pathway:nth-child(even) {
+    padding: 18px 0;
+    border-left: 0;
+  }
+
+  .services-orientation {
+    margin-top: 28px;
+  }
+
+  .services-audience {
+    gap: 14px;
+  }
+
+  .therapist-comparison {
+    padding-top: 52px;
+  }
+
+  .therapist-comparison-heading {
+    gap: 18px;
+  }
+
+  .services-common {
+    gap: 12px;
+  }
+
+  .contact-directory {
+    gap: 0;
+    padding: 22px;
+  }
+
+  .contact-directory-section + .contact-directory-section {
+    margin-top: 30px;
+    padding-top: 28px;
+    padding-left: 0;
+    border-top: 1px solid var(--ink);
+    border-left: 0;
+  }
+}
