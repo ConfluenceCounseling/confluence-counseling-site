@@ -3353,6 +3353,7 @@ textarea {
   }
 
   .hero-visual {
+    justify-items: center;
     min-height: auto;
   }
 
