@@ -2457,6 +2457,20 @@ textarea:focus-visible {
   max-width: 900px;
 }
 
+.intro-section-drop-cap .intro-copy {
+  grid-column: 2;
+}
+
+.intro-section-drop-cap .intro-copy > p:first-child::first-letter {
+  float: left;
+  margin: 0.08em 0.12em 0 0;
+  color: var(--ink);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 4.15rem;
+  font-weight: 600;
+  line-height: 0.78;
+}
+
 .intro-copy h2,
 .split-section h2,
 .page-hero h1,
@@ -3246,6 +3260,10 @@ textarea {
   .clinician-content,
   .services-diagnosis-section .diagnosis-intro {
     max-width: 760px;
+  }
+
+  .intro-section-drop-cap .intro-copy {
+    grid-column: 1;
   }
 
   .place-feature-figure {
