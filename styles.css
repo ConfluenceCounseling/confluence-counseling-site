@@ -4029,20 +4029,7 @@ select:focus-visible {
   grid-template-columns: 1fr;
   place-items: center;
   padding: clamp(36px, 5vh, 52px) 0;
-  isolation: isolate;
-  overflow: hidden;
-  background: #929f91;
-}
-
-.hero.hero-brand::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background: url("assets/hero-sage-paper-texture.jpg") center / cover no-repeat;
-  mix-blend-mode: soft-light;
-  opacity: 0.42;
+  background: #164f4d url("assets/hero-rivers-rotated.jpg") center 52% / cover no-repeat;
 }
 
 .hero-brand-lockup {
@@ -4064,6 +4051,7 @@ select:focus-visible {
 .hero.hero-brand h1 {
   max-width: none;
   margin-top: clamp(20px, 2.8vh, 28px);
+  color: var(--paper);
   font-size: clamp(3.2rem, 6.1vw, 5.7rem);
   line-height: 0.92;
   white-space: nowrap;
@@ -4072,7 +4060,7 @@ select:focus-visible {
 .hero-brand-subtitle {
   max-width: 34rem;
   margin: clamp(13px, 1.8vh, 18px) 0 0;
-  color: var(--moss);
+  color: var(--paper);
   font-size: clamp(1.0625rem, 1.35vw, 1.1875rem);
   font-weight: 500;
   line-height: 1.45;
