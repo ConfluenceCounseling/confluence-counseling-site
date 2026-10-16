@@ -4030,9 +4030,9 @@ select:focus-visible {
   place-items: center;
   padding: clamp(36px, 5vh, 52px) 0;
   background-color: #163b3a;
-  background-image: url("assets/hero-geometric-golden-ratio.jpg");
-  background-position: left 58%;
-  background-size: 125% auto;
+  background-image: url("assets/hero-architectural-geometry.jpg");
+  background-position: right 76%;
+  background-size: 150% auto;
   background-repeat: no-repeat;
 }
 
@@ -4089,7 +4089,7 @@ select:focus-visible {
   .hero.hero-brand {
     min-height: auto;
     padding: 48px 0 58px;
-    background-position: left center;
+    background-position: 68% center;
     background-size: auto 112%;
   }
 
