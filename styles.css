@@ -4034,17 +4034,17 @@ select:focus-visible {
 .hero.hero-brand::before {
   content: "";
   position: absolute;
-  z-index: -1;
-  top: 4%;
+  z-index: 0;
+  top: 2%;
   left: 50%;
-  width: min(760px, 78vw);
-  height: min(470px, 54svh);
+  width: min(670px, 76vw);
+  height: min(500px, 57svh);
   transform: translateX(-50%);
   background:
-    radial-gradient(ellipse at 38% 45%, rgba(22, 79, 77, 0.13) 0%, rgba(22, 79, 77, 0.055) 28%, transparent 62%),
-    radial-gradient(ellipse at 66% 31%, rgba(111, 127, 112, 0.16) 0%, rgba(111, 127, 112, 0.06) 32%, transparent 67%),
-    radial-gradient(ellipse at 57% 72%, rgba(169, 82, 34, 0.09) 0%, rgba(229, 216, 195, 0.12) 34%, transparent 68%);
-  filter: blur(10px);
+    radial-gradient(ellipse at 29% 50%, rgba(22, 79, 77, 0.30) 0%, rgba(22, 79, 77, 0.15) 27%, transparent 64%),
+    radial-gradient(ellipse at 72% 30%, rgba(111, 127, 112, 0.34) 0%, rgba(111, 127, 112, 0.16) 30%, transparent 66%),
+    radial-gradient(ellipse at 63% 76%, rgba(181, 126, 32, 0.27) 0%, rgba(181, 126, 32, 0.12) 30%, transparent 65%);
+  filter: blur(7px);
   pointer-events: none;
 }
 
@@ -4092,8 +4092,8 @@ select:focus-visible {
   }
 
   .hero.hero-brand::before {
-    top: 8%;
-    width: min(650px, 88vw);
+    top: 6%;
+    width: min(590px, 88vw);
     height: min(420px, 48svh);
   }
 }
@@ -4114,10 +4114,10 @@ select:focus-visible {
   }
 
   .hero.hero-brand::before {
-    top: 7%;
-    width: 118%;
-    height: 350px;
-    opacity: 0.82;
+    top: 8%;
+    width: 112%;
+    height: 340px;
+    opacity: 0.9;
   }
 
   .hero-brand-subtitle {
