@@ -4028,6 +4028,24 @@ select:focus-visible {
   grid-template-columns: 1fr;
   place-items: center;
   padding: clamp(36px, 5vh, 52px) 0;
+  isolation: isolate;
+}
+
+.hero.hero-brand::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 4%;
+  left: 50%;
+  width: min(760px, 78vw);
+  height: min(470px, 54svh);
+  transform: translateX(-50%);
+  background:
+    radial-gradient(ellipse at 38% 45%, rgba(22, 79, 77, 0.13) 0%, rgba(22, 79, 77, 0.055) 28%, transparent 62%),
+    radial-gradient(ellipse at 66% 31%, rgba(111, 127, 112, 0.16) 0%, rgba(111, 127, 112, 0.06) 32%, transparent 67%),
+    radial-gradient(ellipse at 57% 72%, rgba(169, 82, 34, 0.09) 0%, rgba(229, 216, 195, 0.12) 34%, transparent 68%);
+  filter: blur(10px);
+  pointer-events: none;
 }
 
 .hero-brand-lockup {
@@ -4035,6 +4053,8 @@ select:focus-visible {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-brand-logo {
@@ -4052,6 +4072,15 @@ select:focus-visible {
   white-space: nowrap;
 }
 
+.hero-brand-subtitle {
+  max-width: 34rem;
+  margin: clamp(13px, 1.8vh, 18px) 0 0;
+  color: var(--moss);
+  font-size: clamp(1.0625rem, 1.35vw, 1.1875rem);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
 @media (max-width: 900px) {
   .hero.hero-brand {
     min-height: clamp(430px, 58svh, 540px);
@@ -4060,6 +4089,12 @@ select:focus-visible {
 
   .hero-brand-logo {
     width: clamp(240px, min(42vw, 38svh), 320px);
+  }
+
+  .hero.hero-brand::before {
+    top: 8%;
+    width: min(650px, 88vw);
+    height: min(420px, 48svh);
   }
 }
 
@@ -4076,6 +4111,21 @@ select:focus-visible {
   .hero.hero-brand h1 {
     margin-top: 22px;
     font-size: clamp(2.55rem, 12vw, 4rem);
+  }
+
+  .hero.hero-brand::before {
+    top: 7%;
+    width: 118%;
+    height: 350px;
+    opacity: 0.82;
+  }
+
+  .hero-brand-subtitle {
+    max-width: 21rem;
+    margin-top: 12px;
+    padding: 0 10px;
+    font-size: 1rem;
+    line-height: 1.4;
   }
 }
 
